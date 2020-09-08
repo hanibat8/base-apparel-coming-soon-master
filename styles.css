@@ -46,10 +46,35 @@ body {
 	width: 6rem;
 	border: none;
 	border-radius: 100px;
+	outline: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0 0.4rem 0.4rem rgba(66, 40, 40, 0.2);
+}
+
+input[type=email] {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	height: 4rem;
+	width: 80%;
+	border-radius: 100px;
+	border: 1px solid rgb(141, 124, 56);
+	background-color: transparent;
+	margin-bottom: 0;
+}
+
+.error {
+	width: 100%;
+	padding: 0;
+	margin-bottom: 8rem;
+	display: block;
+	color: rgb(231, 26, 26);
+}
+
+.error.active {
+	padding: 1rem;
 }
 
 .form {
@@ -73,15 +98,6 @@ body {
 .info h1 span {
 	color: rgb(201, 196, 176);
 	font-weight: 300;
-}
-
-input {
-	height: 4rem;
-	width: 80%;
-	border-radius: 100px;
-	border: 1px solid rgb(201, 196, 176);
-	background-color: transparent;
-	margin-bottom: 8rem;
 }
 
 .image__container {
@@ -117,6 +133,10 @@ input {
 }
 
 @media (min-width: 900px) {
+	.btn {
+		right: 19%;
+	}
+
 	.container {
 		grid-template-columns: 9rem 1fr 2rem 1fr;
 		grid-template-rows: 8rem 1fr;

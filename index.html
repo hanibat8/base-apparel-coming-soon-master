@@ -18,14 +18,15 @@
           Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <div class="form">
-          <input type="email" placeholder="Email Address"></input>
-          <button class="btn">
-          <svg class="arrow__icon">
-            <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
-          </svg>
-        </button>
-        </div>
+        <form class="form" novalidate>
+          <input type="email" placeholder="Email Address" id="mail" class="mail" required>
+          <span class="error" aria-live="polite"></span>
+          <button type="submit" class="btn">
+            <svg class="arrow__icon">
+              <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
+            </svg>
+          </button>
+        </form>
       </div>
       <div class="image__container">
         <picture class="img model-img">
@@ -36,4 +37,5 @@
   </div>
   </main>
 </body>
+<script src='app.js'></script>
 </html>
